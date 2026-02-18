@@ -1,0 +1,14 @@
+{
+  "name": "channel-monitor",
+  "schedule": "*/30 * * * *",
+  "timezone": "America/New_York",
+  "enabled": true,
+  "task": {
+    "type": "assistant_prompt",
+    "prompt": "Check connected messaging channels for unanswered high-priority questions, direct mentions, or urgent support requests. Return only actionable items.",
+    "output": {
+      "channel": "YOUR_CHANNEL",
+      "format": "text"
+    }
+  }
+}

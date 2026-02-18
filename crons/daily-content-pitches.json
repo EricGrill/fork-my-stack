@@ -1,0 +1,14 @@
+{
+  "name": "daily-content-pitches",
+  "schedule": "0 9 * * *",
+  "timezone": "America/New_York",
+  "enabled": true,
+  "task": {
+    "type": "assistant_prompt",
+    "prompt": "Generate 5 blog post pitches based on current projects, trends, and recent notes. Keep each pitch to 3-5 bullets with a target audience and CTA.",
+    "output": {
+      "channel": "YOUR_CHANNEL",
+      "format": "markdown"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build artifacts
+dist/
+build/
+coverage/
+.tmp/
+.cache/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# Logs
+logs/
+*.log
+
+# Runtime state
+*.pid
+*.sqlite
+*.db
+
+# OpenClaw local overrides
+config/gateway.yaml
+workspace/memory/*.md
+!workspace/memory/.gitkeep

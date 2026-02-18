@@ -1,0 +1,14 @@
+{
+  "name": "memory-maintenance",
+  "schedule": "30 18 * * SUN",
+  "timezone": "America/New_York",
+  "enabled": true,
+  "task": {
+    "type": "assistant_prompt",
+    "prompt": "Review the last 7 daily memory notes. Update MEMORY.md with durable lessons, key decisions, and active goals. Remove stale items.",
+    "output": {
+      "channel": "internal",
+      "format": "text"
+    }
+  }
+}

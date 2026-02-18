@@ -1,0 +1,14 @@
+{
+  "name": "weekly-build-log",
+  "schedule": "0 16 * * FRI",
+  "timezone": "America/New_York",
+  "enabled": true,
+  "task": {
+    "type": "assistant_prompt",
+    "prompt": "Summarize this week's shipped work, blocked items, lessons learned, and next week's top priorities. Format as a publish-ready build log.",
+    "output": {
+      "channel": "YOUR_CHANNEL",
+      "format": "markdown"
+    }
+  }
+}

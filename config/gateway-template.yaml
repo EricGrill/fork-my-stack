@@ -1,0 +1,64 @@
+# OpenClaw gateway template
+# Copy to your local config path and replace placeholders.
+
+gateway:
+  name: fork-my-stack
+  timezone: America/New_York
+
+models:
+  providers:
+    anthropic:
+      type: anthropic
+      apiKey: ${ANTHROPIC_API_KEY}
+    openai:
+      type: openai
+      apiKey: ${OPENAI_API_KEY}
+    ollama:
+      type: ollama
+      baseUrl: http://YOUR_OLLAMA_HOST:11434
+
+  default_model: anthropic/claude-opus-4-6
+
+  routing:
+    main_session: anthropic/claude-opus-4-6
+    subagents: openai-codex/gpt-5.3-codex
+    cheap_background: ollama/qwen3:30b
+    fast_local: ollama/mistral:7b
+
+agents:
+  defaults:
+    memoryEnabled: true
+    heartbeatEnabled: true
+    toolSafety: strict
+    requireConfirmForExternalPosts: true
+
+channels:
+  whatsapp:
+    enabled: false
+    provider: YOUR_WHATSAPP_PROVIDER
+    token: ${WHATSAPP_TOKEN}
+  telegram:
+    enabled: false
+    botToken: ${TELEGRAM_BOT_TOKEN}
+  slack:
+    enabled: false
+    botToken: ${SLACK_BOT_TOKEN}
+    appToken: ${SLACK_APP_TOKEN}
+    signingSecret: ${SLACK_SIGNING_SECRET}
+  discord:
+    enabled: false
+    botToken: ${DISCORD_BOT_TOKEN}
+    appId: ${DISCORD_APP_ID}
+    publicKey: ${DISCORD_PUBLIC_KEY}
+
+mcp:
+  servers:
+    - name: example-mcp
+      transport: sse
+      url: https://YOUR_MCP_SERVER/sse
+      headers:
+        Authorization: Bearer ${MCP_API_KEY}
+
+cron:
+  enabled: true
+  path: ./crons
