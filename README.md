@@ -177,7 +177,7 @@ Related reading from ericgrill.com:
 
 ## 👋 About
 
-Built by **Eric Grill** — **Builder | Breaker | Fixer**.
+Built by **Eric Grill** - **Builder | Breaker | Fixer**.
 
 - Website: <https://ericgrill.com>
 - GitHub: <https://github.com/EricGrill>

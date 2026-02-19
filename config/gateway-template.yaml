@@ -1,21 +1,21 @@
 # OpenClaw gateway template
-# Copy to your local config path and replace placeholders.
+# Copy to your local config path and replace placeholder values.
 
 gateway:
-  name: fork-my-stack
-  timezone: America/New_York
+  name: your-stack-name
+  timezone: YOUR_TIMEZONE
 
 models:
   providers:
     anthropic:
       type: anthropic
-      apiKey: ${ANTHROPIC_API_KEY}
+      apiKey: YOUR_ANTHROPIC_API_KEY
     openai:
       type: openai
-      apiKey: ${OPENAI_API_KEY}
+      apiKey: YOUR_OPENAI_API_KEY
     ollama:
       type: ollama
-      baseUrl: http://YOUR_OLLAMA_HOST:11434
+      baseUrl: http://your-server-ip:11434
 
   default_model: anthropic/claude-opus-4-6
 
@@ -36,28 +36,28 @@ channels:
   whatsapp:
     enabled: false
     provider: YOUR_WHATSAPP_PROVIDER
-    token: ${WHATSAPP_TOKEN}
+    token: YOUR_WHATSAPP_TOKEN
   telegram:
     enabled: false
-    botToken: ${TELEGRAM_BOT_TOKEN}
+    botToken: YOUR_TELEGRAM_BOT_TOKEN
   slack:
     enabled: false
-    botToken: ${SLACK_BOT_TOKEN}
-    appToken: ${SLACK_APP_TOKEN}
-    signingSecret: ${SLACK_SIGNING_SECRET}
+    botToken: YOUR_SLACK_BOT_TOKEN
+    appToken: YOUR_SLACK_APP_TOKEN
+    signingSecret: YOUR_SLACK_SIGNING_SECRET
   discord:
     enabled: false
-    botToken: ${DISCORD_BOT_TOKEN}
-    appId: ${DISCORD_APP_ID}
-    publicKey: ${DISCORD_PUBLIC_KEY}
+    botToken: YOUR_DISCORD_BOT_TOKEN
+    appId: YOUR_DISCORD_APP_ID
+    publicKey: YOUR_DISCORD_PUBLIC_KEY
 
 mcp:
   servers:
     - name: example-mcp
       transport: sse
-      url: https://YOUR_MCP_SERVER/sse
+      url: https://your-mcp-server/sse
       headers:
-        Authorization: Bearer ${MCP_API_KEY}
+        Authorization: Bearer YOUR_MCP_API_KEY
 
 cron:
   enabled: true

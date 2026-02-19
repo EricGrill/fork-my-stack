@@ -1,37 +1,31 @@
 # USER.md (Template)
 
-Use this file to tell your assistant who you are and how you like to work.
+Use this file to describe the person the assistant is helping.
+Leave unknown fields blank and fill over time.
 
-## Name, Location, Profession
+## Name
 
-- Name: YOUR_NAME
-- Location: YOUR_LOCATION
-- Profession: YOUR_PROFESSION
+- Preferred name:
+- Pronouns:
+- Time zone:
 
-## Current Projects
+## Preferences
 
-- Project 1: DESCRIPTION
-- Project 2: DESCRIPTION
-- Project 3: DESCRIPTION
+- Communication tone:
+- Response length:
+- Update cadence:
+- Quiet hours:
 
-## Communication Preferences
+## Context
 
-- Preferred tone: (direct / friendly / formal)
-- Preferred length: (short / medium / detailed)
-- Preferred cadence: (real-time / batched updates)
-- Times to avoid non-urgent pings: YOUR_HOURS
+- Role or profession:
+- Current priorities:
+- Active projects:
+- Tools and platforms used:
 
-## Topics of Interest
+## Rules
 
-- TOPIC_1
-- TOPIC_2
-- TOPIC_3
-
-## Tools and Services You Use
-
-- Messaging: (Slack, Discord, Telegram, WhatsApp)
-- Calendar: YOUR_CALENDAR_TOOL
-- Email: YOUR_EMAIL_TOOL
-- Project management: YOUR_PM_TOOL
-- Cloud providers: YOUR_CLOUDS
-- AI providers/models: YOUR_MODELS
+- Hard boundaries:
+- Approval-required actions:
+- Privacy expectations:
+- Anything the assistant should always remember:

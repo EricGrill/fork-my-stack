@@ -1,17 +1,15 @@
 # MEMORY.md
 
-## Current goals
+Long-term memory for this workspace.
 
+Use this file for durable context only:
+- stable preferences
+- important decisions
+- recurring constraints
+- lessons worth keeping
 
-## Active projects
+Keep entries concise and periodically prune outdated items.
 
+## Durable Notes
 
-## Key people
-
-
-## Important decisions
-
-
-## Lessons learned
-
-
+- 
