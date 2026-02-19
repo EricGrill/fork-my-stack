@@ -162,6 +162,9 @@ You (any device) → Channels (WhatsApp/Telegram/Slack/Discord) → OpenClaw Gat
 
 Related reading from ericgrill.com:
 
+- [PicoClaw vs OpenClaw: A Code-Level Deep Dive](https://ericgrill.com/blog/picoclaw-vs-openclaw-code-deep-dive)
+- [What You Lose (and Gain) Running PicoClaw Instead of OpenClaw](https://ericgrill.com/blog/picoclaw-vs-openclaw-tradeoffs)
+- [Running an AI Agent on a $10 Board vs a Mac Mini](https://ericgrill.com/blog/ai-agent-ten-dollar-board-vs-mac-mini)
 - [Run Your AI Assistant on a Local GPU for (Basically) Free](https://ericgrill.com/blog/local-gpu-ai-assistant-free)
 - [Claude Code Agents](https://ericgrill.com/blog/claude-code-agents)
 - [Claude Code Hooks](https://ericgrill.com/blog/claude-code-hooks)
