@@ -44,18 +44,14 @@ cd ~/Development
 git clone https://github.com/YOUR_USERNAME/fork-my-stack.git
 cd fork-my-stack
 
-# 2) Copy workspace scaffold
-mkdir -p ~/.openclaw/workspace
-cp -R workspace/* ~/.openclaw/workspace/
+# 2) Run setup script
+chmod +x setup.sh
+./setup.sh
 
-# 3) Create gateway config from template
-mkdir -p ~/.openclaw/config
-cp config/gateway-template.yaml ~/.openclaw/config/gateway.yaml
-
-# 4) Edit config (models, channels, MCP servers, keys)
+# 3) Edit config (models, channels, MCP servers, keys)
 $EDITOR ~/.openclaw/config/gateway.yaml
 
-# 5) Start OpenClaw
+# 4) Start OpenClaw
 openclaw gateway start
 openclaw gateway status
 
